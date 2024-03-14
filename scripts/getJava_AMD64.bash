@@ -3,12 +3,10 @@
 # Downloads a copy of jre
 # https://packages.debian.org/sid/openjdk-8-jre-headless
 if [[ $DOWNLOAD_NEW ]]; then
-    wget http://ftp.us.debian.org/debian/pool/main/o/openjdk-8/openjdk-8-jre-headless_8u402-ga-2+b1_amd64.deb
+    wget https://builds.openlogic.com/downloadJDK/openlogic-openjdk-jre/8u402-b06/openlogic-openjdk-jre-8u402-b06-linux-x64-deb.deb
 fi
 
-dpkg --configure -a
-
-apt install ./openjdk-8-jre-headless_8u402-ga-2+b1_amd64.deb -y
+apt install ./openlogic-openjdk-jre-8u402-b06-linux-x64-deb.deb -y
 
 # Clean up
-#rm -f openjdk-8-jre-headless_8u402-ga-2+b1_amd64.deb
+rm -f openlogic-openjdk-jre-8u402-b06-linux-x64-deb.deb
