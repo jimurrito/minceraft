@@ -3,6 +3,12 @@ A simple Forge Minecraft server, running in a docker container.
 
 All options within the `server.properties` file have been ported to enviromental variables. Using these variables, the server.properties file is regenerated on each startup of the container. It's recommended to use a `.env` file for your variables to avoid unexpected changes to your server configuration.
 
+### Links
+
+- [Docker Hub](https://hub.docker.com/r/jimurrito/minceraft)
+
+- [Github](https://github.com/jimurrito/minceraft)
+
 ## Getting Started
 
 ### Simple run with all defaults.
