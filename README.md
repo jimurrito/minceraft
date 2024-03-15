@@ -107,6 +107,6 @@ Options below are used to generate `server.properties` on each start-up.
 | SRVR_SPAWNMONSTERS |"true" |
 | SRVR_VIEWDISTANCE |10 |
 | SRVR_GENERATESTRUCTURES |"true" |
-| SRVR_MOTD |<Server Promo> |
+| SRVR_MOTD | Server-Promo |
 
 [For more information, please checkout the Minecraft Wiki](https://minecraft.fandom.com/wiki/Server.properties)
