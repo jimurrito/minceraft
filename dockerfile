@@ -196,7 +196,6 @@ WORKDIR /server
 RUN bash /scripts/getMCServer.bash
 RUN bash /scripts/makeLinks.sh
 RUN rm -fr /scripts
-RUN rm -f *.deb
 
 EXPOSE 25565
 
