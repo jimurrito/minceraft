@@ -179,24 +179,22 @@ ENV WHITELIST=${WHITELIST}
 
 #
 # Build
-# 
+#
 
 USER root
-
-VOLUME [ "/server" ]
-
-ADD ./scripts /scripts
-ADD ./server /server
 
 RUN apt update && apt install --upgrade
 RUN apt install wget openjdk-17-jre-headless -y
 
-WORKDIR /server
+VOLUME [ "/server" ]
+RUN mkdir /server
 
-RUN bash /scripts/getMCServer.bash
-RUN bash /scripts/makeLinks.sh
-RUN rm -fr /scripts
+ADD ./src /src
+WORKDIR /src/server
+
+RUN bash ../getMCServer.bash
+RUN bash ../makeLinks.sh
 
 EXPOSE 25565
 
-CMD bash makeSrvrProps.bash && bash run.sh
+CMD bash server-up.bash

@@ -19,15 +19,7 @@ All options within the `server.properties` file have been ported to enviromental
 docker run -it \
     --name minceraft \
     -p 25565:25565 \
-    jimurrito/minceraft:latest
-```
-
-### Run with imported mods
-```bash
-docker run -it \
-    --name minceraft \
-    -v /path/to/mods:/mods \
-    -p 25565:25565 \
+    -v /minceraft:/server \
     jimurrito/minceraft:latest
 ```
 
@@ -40,6 +32,7 @@ docker run -it \
     -e LEVELNAME="My Minceraft Server" \
     -e LEVELSEED="docker" \
     -p 25565:25565 \
+    -v /minceraft:/server \
     jimurrito/minceraft:latest
 ```
 
@@ -52,6 +45,7 @@ docker run -it \
     -v /path/to/logs:/logs \
     --env-file ./server.env \
     -p 25565:25565 \
+    -v /minceraft:/server \
     jimurrito/minceraft:latest
 ```
 
