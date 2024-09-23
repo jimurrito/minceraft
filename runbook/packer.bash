@@ -1,7 +1,12 @@
 #!/bin/bash
 #
-cDir="./docs/mods"
+cDir=$PWD
+tDir="./docs/mods"
+#
+cd "$tDir"
 # makes tar
-sudo tar -zvcf "$cDir/modpack.tar.gz" "$cDir/"*.jar
+sudo tar -zvcf modpack.tar.gz *.jar
 # Makes zip
-sudo zip -vr "$cDir/modpack.zip" "$cDir/"*.jar
+sudo zip -vr modpack.zip *.jar
+#
+cd "$cDir"
