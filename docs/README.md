@@ -11,7 +11,13 @@ Runs Neoforge Minecraft Server 1.20.4
 
 
 ## Neoforge Installer
-[Neoforge](./neoforge-20.4.237-installer.jar)
+[Neoforge-Installer](./neoforge-20.4.237-installer.jar)
+
+Run this to install. Ensure you have JRE installed prior.
+
+```shell
+java -jar /path/to/neoforge-20.4.237-installer.jar
+```
 
 
 ## Mods
