@@ -6,7 +6,7 @@
 ## Mods
 
 > Full mod pack can be found here:
-> [modpack.zip](./mods/modpack.zip) | [modpack.zip](./mods/modpack.tar.gz)
+> [modpack.zip](./mods/modpack.zip) | [modpack.tar.gz](./mods/modpack.tar.gz)
 
 - [Advanced Netherite](./mods/advancednetherite-forge-2.0.2-1.20.2.jar)
 - [Balm](./mods/balm-forge-1.20.2-8.0.5.jar)
