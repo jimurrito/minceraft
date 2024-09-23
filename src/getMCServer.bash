@@ -11,5 +11,5 @@ echo "eula=true" > eula.txt
 # installer does not need this. only forge.jar
 
 # Install forge
-java -jar neoforge-20.2.88-installer.jar --installServer
-rm -fr neoforge-20.2.88-installer.jar*
+java -jar neoforge-20.4.237-installer.jar --installServer
+rm -fr neoforge-20.4.237-installer.jar*
