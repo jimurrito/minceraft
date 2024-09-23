@@ -1,7 +1,7 @@
 # (Minceraft) Minecraft v1.20.2 Docker Server
 A simple Forge Minecraft server, running in a docker container.
 
-Runs a Forge Minecraft server, version 1.20.2.
+Runs a NeoForge Minecraft server, version 1.20.2.
 Supports ARM64 and x86-64
 
 All options within the `server.properties` file have been ported to enviromental variables. Using these variables, the server.properties file is regenerated on each startup of the container. It's recommended to use a `.env` file for your variables to avoid unexpected changes to your server configuration.

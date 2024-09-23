@@ -1,7 +1,13 @@
-# Minceraft Server hosted by Jimurrito
+*Minceraft Server hosted by Jimurrito*
+
 
 ## Server URI:
 `mcs.jimurrito.com`
+
+
+## Neoforge Installer
+[Neoforge](./neoforge-20.2.88-installer.jar)
+
 
 ## Mods
 
