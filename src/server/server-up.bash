@@ -1,5 +1,5 @@
 #!/bin/bash
-mkdir /server
+mkdir -p /server
 bash makeSrvrProps.bash
 cp -r . /server
 cd /server || exit 1

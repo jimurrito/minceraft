@@ -1,26 +1,27 @@
 *Minceraft Server hosted by Jimurrito*
 
 > **WARNING**
-> Server was recently updated to 1.20.4 and Neoforge. Please update accordingly.
-> The modpack was also updated, ensure to download the latest versions below.
+> THIS SITE IS OUT OF DATE. ACCESS TO THE SERVER MAY NO WORK!
 
-Runs Neoforge Minecraft Server 1.20.4
+Runs Neoforge Minecraft Server 1.21.1
 
 ## Server URI:
 `mcs.jimurrito.com`
 
 
 ## Neoforge Installer
-[Neoforge-Installer](./neoforge-20.4.237-installer.jar)
+[Neoforge-Installer](./neoforge-21.1.206-installer.jar)
 
 Run this to install. Ensure you have JRE installed prior.
 
 ```shell
-java -jar /path/to/neoforge-20.4.237-installer.jar
+java -jar /path/to/neoforge-21.1.206-installer.jar
 ```
 
 
 ## Mods
+
+> Outdated!
 
 > Full mod pack can be found here:
 > [modpack.zip](./mods/modpack.zip) | [modpack.tar.gz](./mods/modpack.tar.gz)

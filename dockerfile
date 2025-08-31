@@ -188,7 +188,6 @@ ENV VIEWDISTANCE=${VIEWDISTANCE}
 ARG WHITELIST="false"
 ENV WHITELIST=${WHITELIST}
 
-
 #
 # Build
 #
@@ -196,7 +195,15 @@ ENV WHITELIST=${WHITELIST}
 USER root
 
 RUN apt update && apt install --upgrade
-RUN apt install wget openjdk-17-jre-headless -y
+RUN apt install wget -y
+RUN wget https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb
+RUN dpkg -i jdk-21_linux-x64_bin.deb
+
+#
+# MC server var
+ARG MC_VERSION
+ENV MC_VERSION=${MC_VERSION}
+
 
 VOLUME [ "/server" ]
 RUN mkdir /server
@@ -209,4 +216,4 @@ RUN bash ../makeLinks.sh
 
 EXPOSE 25565
 
-CMD bash server-up.bash
+CMD ["bash", "server-up.bash"]
