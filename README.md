@@ -1,15 +1,13 @@
-# (Minceraft) Minecraft v1.20.4 Docker Server
-A simple NeoForge Minecraft server, running in a docker container.
+# (Minceraft) Minecraft Neoforge Docker Container
+A simple NeoForge Minecraft server, running in a docker container. Supports both `x86_64` and `arm64` hardware architecture.
 
-Runs a NeoForge Minecraft server, version 1.20.4.
-Supports ARM64 and x86-64
-
-All options within the `server.properties` file have been ported to enviromental variables. Using these variables, the server.properties file is regenerated on each startup of the container. It's recommended to use a `.env` file for your variables to avoid unexpected changes to your server configuration.
+## Minecraft versions supported
+- 1.21.1
+- 1.20.4
 
 ### Links
 
 - [Docker Hub](https://hub.docker.com/r/jimurrito/minceraft)
-
 - [Github](https://github.com/jimurrito/minceraft)
 
 ## Getting Started
@@ -22,6 +20,8 @@ docker run -it \
     -v /minceraft:/server \
     jimurrito/minceraft:latest
 ```
+
+> Using `latest` docker tag will pull whatever is the newest support minecraft/forge version used by Minecraft. If you want to play on a specific version, you can use the tag. I.E: `jimurrito/minceraft:1_21_1` for version 1.21.1.
 
 
 ### Run with imported mods & Customized server config
@@ -56,7 +56,11 @@ LEVELSEED="docker"
 MOTD="I love Minceraft!"
 ```
 
+
 ## Parameters
+
+All options within the `server.properties` file have been ported to environmental variables. Using these variables, the server.properties file is regenerated on each startup of the container. It's recommended to use a `.env` file for your variables to avoid unexpected changes to your server configuration.
+
 
 ### Minecraft Server settings 
 Options below are used to generate `server.properties` on each start-up.
