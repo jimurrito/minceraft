@@ -5,7 +5,9 @@ VERSIONS=$(cat "./versions")
 
 for v in $VERSIONS; do
     echo "Building image for Minecraft [$v]"
-    docker build --build-arg "MC_VERSION=$v" \
-        -t "jimurrito/minceraft:$v" \
-        -t "jimurrito/minceraft:$v$(date "+%Y%m%d")" .
+    docker buildx build \
+        --build-arg "MC_VERSION=$v" \
+        --platform linux/amd64,linux/arm64 \
+        -t "jimurrito/minceraft:$v-$(date "+%Y%m%d")" \
+        -t "jimurrito/minceraft:$v" 
 done
