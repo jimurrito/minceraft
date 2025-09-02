@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [[ -z "$(docker buildx ls | grep mince-builder)" ]]; then
-    docker buildx create --name mince-builder --driver docker-container --use --bootstrap
+if [[ -z "$(docker buildx ls | grep jimurrito-builder)" ]]; then
+    docker buildx create --name jimurrito-builder --driver docker-container --use --bootstrap
 fi
 
 # Build one instance per version in ./versions
