@@ -19,8 +19,8 @@ jobs:
           username: ${{ secrets.DOCKER_REGISTRY_USER }}
           password: ${{ secrets.DOCKER_REGISTRY_KEY }}
 
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
+      #- name: Set up QEMU
+      #  uses: docker/setup-qemu-action@v3
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -31,9 +31,9 @@ jobs:
           context: .
           push: true
           pull: true
-          platforms:
-            - linux/amd64
-            - linux/arm64
+          #platforms:
+          #  - linux/amd64
+          #  - linux/arm64
           build-args: |
             MC_VERSION=1_20_4
           tags: docker.io/jimurrito/minceraft:1_20_4
@@ -44,12 +44,11 @@ jobs:
           context: .
           push: true
           pull: true
-          platforms:
-            - linux/amd64
-            - linux/arm64
+          #platforms:
+          #  - linux/amd64
+          #  - linux/arm64
           build-args: |
             MC_VERSION=1_21_1
-
           tags:
             - docker.io/jimurrito/minceraft:1_21_1
             - docker.io/jimurrito/minceraft:latest
