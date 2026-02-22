@@ -1,7 +1,11 @@
 # (Minceraft) Minecraft Neoforge Docker Container
-A simple NeoForge Minecraft server, running in a docker container. Supports both `x86_64` and `arm64` hardware architecture.
+
+A simple NeoForge Minecraft server, running in a docker container.
+Supports both `x86_64` and `arm64` hardware architecture.
+
 
 ## Minecraft versions supported
+
 - 1.21.1
 - 1.20.4
 
@@ -10,9 +14,11 @@ A simple NeoForge Minecraft server, running in a docker container. Supports both
 - [Docker Hub](https://hub.docker.com/r/jimurrito/minceraft)
 - [Github](https://github.com/jimurrito/minceraft)
 
+
 ## Getting Started
 
-### Simple run with all defaults.
+### Simple run with all defaults
+
 ```bash
 docker run -it \
     --name minceraft \
@@ -21,10 +27,12 @@ docker run -it \
     jimurrito/minceraft:latest
 ```
 
-> Using `latest` docker tag will pull whatever is the newest support minecraft/forge version used by Minecraft. If you want to play on a specific version, you can use the tag. I.E: `jimurrito/minceraft:1_21_1` for version 1.21.1.
-
+> Using `latest` docker tag will pull whatever is the newest support minecraft/forge version used by Minecraft.
+> If you want to play on a specific version, you can use the tag.
+> I.E: `jimurrito/minceraft:1_21_1` for version 1.21.1.
 
 ### Run with imported mods & Customized server config
+
 ```bash
 docker run -it \
     --name minceraft \
@@ -36,8 +44,8 @@ docker run -it \
     jimurrito/minceraft:latest
 ```
 
+### Run with imported mods & Customized server config in a .env file
 
-### Run with imported mods & Customized server config in a .env file.
 ```bash
 docker run -it \
     --name minceraft \
@@ -50,6 +58,7 @@ docker run -it \
 ```
 
 `./server.env`
+
 ```bash
 LEVELNAME="My Minceraft Server"
 LEVELSEED="docker"
@@ -59,10 +68,13 @@ MOTD="I love Minceraft!"
 
 ## Parameters
 
-All options within the `server.properties` file have been ported to environmental variables. Using these variables, the server.properties file is regenerated on each startup of the container. It's recommended to use a `.env` file for your variables to avoid unexpected changes to your server configuration.
+All options within the `server.properties` file have been ported to environmental variables. 
+Using these variables, the server.properties file is regenerated on each startup of the container. 
+It's recommended to use a `.env` file for your variables to avoid unexpected changes to your server configuration.
 
 
-### Minecraft Server settings 
+### Minecraft Server settings
+
 Options below are used to generate `server.properties` on each start-up.
 
 | Variable | Description | Default |
@@ -128,7 +140,6 @@ Options below are used to generate `server.properties` on each start-up.
 | USENATIVETRANSPORT | Uses native transport | true |
 | VIEWDISTANCE | View distance | 10 |
 | WHITELIST | Enables the whitelist | false |
-
 
 
 [For more information, please checkout the Minecraft Wiki](https://minecraft.fandom.com/wiki/Server.properties)

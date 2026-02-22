@@ -1,9 +1,0 @@
-#
-FROM debian:bookworm
-
-USER root
-
-RUN apt update && apt install --upgrade
-RUN apt install alien wget -y
-
-CMD ["bash"]
