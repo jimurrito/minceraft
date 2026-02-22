@@ -32,9 +32,9 @@ jobs:
           context: .
           push: true
           pull: true
-          platforms:
-            - linux/amd64
-            - linux/arm64
+          platforms: |
+            linux/amd64
+            linux/arm64
           build-args: |
             MC_VERSION=1_20_4
           tags: forgejo.immerhouse.com/jimurrito/minceraft:1_20_4
@@ -45,9 +45,9 @@ jobs:
           context: .
           push: true
           pull: true
-          platforms:
-            - linux/amd64
-            - linux/arm64
+          platforms: |
+            linux/amd64
+            linux/arm64
           build-args: |
             MC_VERSION=1_21_1
 
