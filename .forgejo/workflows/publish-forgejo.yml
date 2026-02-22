@@ -51,6 +51,6 @@ jobs:
           build-args: |
             MC_VERSION=1_21_1
 
-          tags:
-            - forgejo.immerhouse.com/jimurrito/minceraft:1_21_1
-            - forgejo.immerhouse.com/jimurrito/minceraft:latest
+          tags: |
+            forgejo.immerhouse.com/jimurrito/minceraft:1_21_1
+            forgejo.immerhouse.com/jimurrito/minceraft:latest
