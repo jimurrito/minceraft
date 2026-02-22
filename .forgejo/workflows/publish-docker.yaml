@@ -49,6 +49,6 @@ jobs:
           #  - linux/arm64
           build-args: |
             MC_VERSION=1_21_1
-          tags:
-            - docker.io/jimurrito/minceraft:1_21_1
-            - docker.io/jimurrito/minceraft:latest
+          tags: |
+            docker.io/jimurrito/minceraft:1_21_1
+            docker.io/jimurrito/minceraft:latest
