@@ -1,0 +1,8 @@
+TODO
+
+[ ] Rewrite dockerfile using nixos + buildargs
+[ ] Add forgejo workflow
+    - copy from mediarr workflow
+    - add docker login to forgejo vars for double upstream logins (one workflow per upstream)
+    - both forgejo and docker.io for upstream
+[ ] Either reduce the size of the bins (jdk and neoforge) or get them via curl or in nix

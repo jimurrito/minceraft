@@ -1,4 +1,3 @@
 .minceraft-data
 temp/
 src/installers/jdk-jre/*.deb
-.gitignore
